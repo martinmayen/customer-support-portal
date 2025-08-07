@@ -67,11 +67,14 @@ Front-end & IT enthusiast | Kampala, Uganda
 
 ---
 ## 📁 Folder Structure
-customer-support-portal/
+hotel-support-portal/
 │
-├── index.html       (main layout)
+├── index.html                 # Main HTML
 ├── assets/
-│   ├── css/style.css
-│   └── js/app.js
-└── vendor/
-    └── bootstrap.min.css (using CDN anyway)
+│   ├── css/
+│   │   └── style.css          # Custom styles
+│   ├── js/
+│   │   └── app.js             # Main JS logic
+│   └── data/
+│       └── kb.json            # Knowledge Base (can also be inline for now)
+├── README.md
