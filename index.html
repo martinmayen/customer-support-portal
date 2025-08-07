@@ -40,39 +40,41 @@
       <main id="pageContent">
   <!-- Default dashboard content here -->
 
-  <!-- 📚 Knowledge Base section placed correctly INSIDE pageContent -->
   <section id="knowledge-base" class="container mt-4" style="display: none;">
-    <h2>Hotel FAQs & How-to Guides</h2>
-    <div class="accordion" id="kbAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-            How do I make a reservation?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#kbAccordion">
-          <div class="accordion-body">
-            You can make a reservation directly on our website or by calling the hotel front desk at +256 414 259 221.
-          </div>
+  <h2>Hotel FAQs & How-to Guides</h2>
+
+  <div class="accordion" id="kbAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          How do I make a reservation?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#kbAccordion">
+        <div class="accordion-body">
+          You can make a reservation directly on our website or by calling the hotel front desk at +256 414 259 221.
         </div>
       </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-            What time is check-in and check-out?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#kbAccordion">
-          <div class="accordion-body">
-            Check-in time is from 2:00 PM, and check-out is before 11:00 AM.
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more accordion items here -->
     </div>
-  </section>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          What time is check-in and check-out?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#kbAccordion">
+        <div class="accordion-body">
+          Check-in time is from 2:00 PM, and check-out is before 11:00 AM.
+        </div>
+      </div>
+    </div>
+
+    <!-- You can keep adding more accordion-item blocks here -->
+
+  </div>
+</section>
 </main>
   <script src="assets/js/app.js"></script>
       <!-- ✅ Bootstrap JS for accordion/collapse functionality -->
