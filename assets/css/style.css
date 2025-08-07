@@ -1,0 +1,24 @@
+/* Layout */
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+}
+
+.sidebar .nav-link.active {
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+
+.ticket-container {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+/* Ticket item customization */
+.list-group-item {
+  border-left: 4px solid #0d6efd;
+  margin-bottom: 8px;
+}
+.list-group-item p {
+  margin-bottom: 0;
+}
