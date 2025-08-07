@@ -203,3 +203,72 @@ document.addEventListener("DOMContentLoaded", () => {
   updateRoleDisplay();
   loadDashboardPage();
 });
+
+
+const knowledgeBase = [
+  {
+    title: "How do I make a reservation at Speke Hotel Kampala?",
+    category: "Bookings & Reservations",
+    content: "You can book online via our official website or by calling our reservation desk at +256 414 259221. Walk-ins are also welcome based on availability."
+  },
+  {
+    title: "What types of rooms are available?",
+    category: "Rooms & Suites",
+    content: "We offer Deluxe Rooms, Executive Suites, and Business Apartments — all air-conditioned with Wi-Fi, minibar, and TV."
+  },
+  {
+    title: "What time is check-in and check-out?",
+    category: "Check-In & Check-Out",
+    content: "Check-in starts at 2:00 PM. Check-out is by 11:00 AM. Early check-in and late check-out may be arranged upon request."
+  },
+  {
+    title: "Do you provide airport transfers?",
+    category: "Facilities & Amenities",
+    content: "Yes, airport pick-up and drop-off are available on request. Charges may apply. Please inform us 24 hours in advance."
+  },
+  {
+    title: "Can I cancel or modify my booking?",
+    category: "Policies",
+    content: "Cancellations are free up to 48 hours before check-in. Beyond that, one night’s charge may apply."
+  },
+  {
+    title: "Are guests allowed to use the pool and gym?",
+    category: "Facilities & Amenities",
+    content: "Yes, all in-house guests have complimentary access to the swimming pool and fitness center."
+  }
+];
+
+function renderKnowledgeBase(articles) {
+  const kbContainer = document.getElementById("kb-articles");
+  kbContainer.innerHTML = "";
+  
+  articles.forEach((article, index) => {
+    const id = `kb-${index}`;
+    kbContainer.innerHTML += `
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-${id}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${id}" aria-expanded="false" aria-controls="collapse-${id}">
+            ${article.title}
+            <span class="badge bg-secondary ms-2">${article.category}</span>
+          </button>
+        </h2>
+        <div id="collapse-${id}" class="accordion-collapse collapse" aria-labelledby="heading-${id}" data-bs-parent="#kb-articles">
+          <div class="accordion-body">
+            ${article.content}
+          </div>
+        </div>
+      </div>
+    `;
+  });
+}
+
+document.getElementById("kb-search").addEventListener("input", function () {
+  const term = this.value.toLowerCase();
+  const filtered = knowledgeBase.filter(a =>
+    a.title.toLowerCase().includes(term) ||
+    a.content.toLowerCase().includes(term) ||
+    a.category.toLowerCase().includes(term)
+  );
+  renderKnowledgeBase(filtered);
+});
+
