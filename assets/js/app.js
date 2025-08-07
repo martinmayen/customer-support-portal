@@ -182,10 +182,17 @@ document.querySelectorAll(".nav-link").forEach(link => {
     link.classList.add("active");
 
     const page = link.getAttribute("data-page");
+    
+    // Hide all main sections first
+    document.getElementById("pageContent").classList.add("d-none");
+    document.getElementById("knowledge-base").classList.add("d-none");
+
     if (page === 'dashboard') {
+      document.getElementById("pageContent").classList.remove("d-none");
       loadDashboardPage();
-    } else {
-      document.getElementById("pageContent").innerHTML = pages[page];
+    } else if (page === 'knowledge') {
+      document.getElementById("knowledge-base").classList.remove("d-none");
+      renderKnowledgeBase(knowledgeBase);
     }
   });
 });
