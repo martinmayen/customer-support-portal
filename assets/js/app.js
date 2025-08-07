@@ -22,10 +22,10 @@ const ticketFormHTML = `
 
 const pages = {
   dashboard: '',
-  knowledge: `
-    <h2>📚 Knowledge Base</h2>
-    <p>Hotel FAQs and How-To guides coming soon.</p>
-  `
+  //knowledge: `
+   // <h2>📚 Knowledge Base</h2>
+    //<p>Hotel FAQs and How-To guides coming soon.</p>
+  //`
 };
 
 function updateRoleDisplay() {
