@@ -1,20 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
   font-family: 'Playfair Display', serif;
-  background-color: #f8f9fa;
+  background: #f8f9fa;
+  margin: 0;
+  height: 100vh;
 }
 
-.hotel-title {
-  font-weight: 700;
-  color: #8b5e3c;
+.logo {
+  height: 40px;
 }
 
-.accordion-button {
-  font-weight: 600;
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
 }
 
-.progress-bar {
-  font-weight: bold;
-  text-align: center;
+.sidebar .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+#roleIndicator {
+  font-size: 0.9rem;
+}
+
+#loginSection {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.card .badge {
+  font-size: 0.85rem;
+}
+
+textarea {
+  resize: vertical;
 }
