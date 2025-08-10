@@ -26,3 +26,51 @@ This version includes a **single dashboard** with login, ticket management, and 
 ---
 
 ## 📂 Project Structure
+hotel-support-portal/
+│
+├── index.html              # Main page (Dashboard with Login + FAQ)
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css       # Custom hotel-themed styling
+│   ├── js/
+│   │   └── app.js          # Simulated login + tickets logic
+│   └── logo.png            # Hotel logo placeholder
+
+---
+
+## 🚀 How to Run
+1. **Download or Clone** this repository.
+2. Open `index.html` in any modern web browser.
+3. No installation needed — everything runs in the browser.
+
+---
+
+## 🔑 Login Details
+For demo purposes:
+- **Admin Login:**  
+  - Username: `admin`  
+  - Password: `admin123`
+- **Guest Login:**  
+  - Username: `guest`  
+  - Password: `guest123`
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5**
+- **CSS3** (Custom + Bootstrap)
+- **Bootstrap 5** (CDN)
+- **Vanilla JavaScript**
+
+---
+
+## 🎨 Customization
+- Replace `assets/logo.png` with your hotel’s logo.
+- Update FAQ content inside `index.html` under the `<section id="faq-section">`.
+- Modify styles in `assets/css/style.css` to match your hotel’s branding.
+
+---
+
+## 📄 License
+This project is open source and available under the MIT License.
