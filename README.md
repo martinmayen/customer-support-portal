@@ -4,7 +4,7 @@ A responsive **Customer Support Portal** designed for Speke hotel in Uganda.
 Built with **HTML**, **CSS**, **Bootstrap**, and **vanilla JavaScript** — no build tools required.  
 This version includes a **single dashboard** with login, ticket management, and FAQs all in one page.
 
-![Speke Hotel Customer Support Portal UI](assets/screenshot.png)
+![Speke Hotel Customer Support Portal UI](assets/images/screenshot.png)
 
 ---
 
